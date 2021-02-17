@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen as uReq
 import pymongo
 
-app = Flask(__name__)  # initialising the flask app with the name 'app'
+application = Flask(__name__)  # initialising the flask app with the name 'app'
 
 
 # base url + /
@@ -79,4 +79,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(port=8000,debug=True) # running the app on the local machine on port 8000
+    application.run(debug=True) # running the app on the local machine on port 8000
